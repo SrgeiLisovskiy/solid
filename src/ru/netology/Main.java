@@ -106,13 +106,13 @@ public class Main {
     }
 
     private static void warehouseFilling(WarehouseService warehouseService) {
-        Drinks juice = new Drinks("Rich", 157.0, "Россия", 0.3, LocalDate.now(), СlassificationDrinks.JUICE);
-        Drinks water1 = new Drinks("Снежка", 39.0, "Беларусь", 1.5, LocalDate.now(), СlassificationDrinks.STILL);
-        Drinks water2 = new Drinks("Вода питьевая", 30.0, "Россия", 1, LocalDate.now(), СlassificationDrinks.SPARKLING_WATER);
+        Product juice = new Drinks("Rich", 157.0, "Россия", 0.3, LocalDate.now(), СlassificationDrinks.JUICE);
+        Product water1 = new Drinks("Снежка", 39.0, "Беларусь", 1.5, LocalDate.now(), СlassificationDrinks.STILL);
+        Product water2 = new Drinks("Вода питьевая", 30.0, "Россия", 1, LocalDate.now(), СlassificationDrinks.SPARKLING_WATER);
 
-        Fruits orange = new Fruits("Апельсин", 237, "Египет", 0.5, LocalDate.now(), "30 дней");
-        Fruits apple = new Fruits("Яблоко", 140, "Турция", 1.5, LocalDate.now(), "45 дней");
-        Fruits banana = new Fruits("Банан", 115, "Турция", 1.0, LocalDate.now(), "10 дней");
+        Product orange = new Fruits("Апельсин", 237, "Египет", 0.5, LocalDate.now(), "30 дней");
+        Product apple = new Fruits("Яблоко", 140, "Турция", 1.5, LocalDate.now(), "45 дней");
+        Product banana = new Fruits("Банан", 115, "Турция", 1.0, LocalDate.now(), "10 дней");
 
         warehouseService.addProduct(juice, 5);
         warehouseService.addProduct(water1, 9);
